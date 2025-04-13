@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "daws.76-state-dev"
+    bucket         = "daws.76-state-prod"
     key            = "sg"
     region         = "us-east-1"
-    dynamodb_table = "daws.76-locking-dev"
+    dynamodb_table = "daws.76-locking-prod"
   }
 }
 
